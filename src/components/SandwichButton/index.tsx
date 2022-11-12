@@ -3,7 +3,7 @@ import { SandwichButtonContainer } from './styles'
 
 export function SandwichButton() {
   return (
-    <SandwichButtonContainer type="button">
+    <SandwichButtonContainer type="button" onClick={() => console.log('click')}>
       <img src={sandwichButton} />
     </SandwichButtonContainer>
   )

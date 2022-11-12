@@ -1,5 +1,5 @@
 import { Avatar } from '../Avatar'
-import coolAvatar from '../../assets/cool-avatar.svg'
+import coolAvatar from '../../../public/happy-avatar.svg'
 import { SandwichButton } from '../SandwichButton'
 import { HeaderContainer } from './styles'
 

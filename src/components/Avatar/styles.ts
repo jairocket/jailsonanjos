@@ -7,6 +7,7 @@ export const AvatarContainer = styled.div`
   overflow: hidden;
   justify-content: center;
   width: fit-content;
+  margin-bottom: 2rem;
 `
 export const AvatarSmall = styled.img`
   height: 40px;

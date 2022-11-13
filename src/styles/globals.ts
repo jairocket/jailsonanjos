@@ -21,8 +21,4 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Cinzel', serif;
  }
 
- span{
-    color: ${(props) => props.theme['blue']};
- }
-
 `

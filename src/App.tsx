@@ -1,11 +1,10 @@
-import './App.css'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/Themes/default'
 import { GlobalStyle } from './styles/globals'
 import { Avatar } from './components/Avatar'
 import { Header } from './components/Header'
 import coolAvatar from '../src/assets/cool-avatar.svg'
-import { AppContainer, SocialMediaContainer } from './styles/styles'
+import { AppContainer, Heading, SocialMediaContainer } from './styles/styles'
 import { GithubLogo, LinkedinLogo, Envelope } from 'phosphor-react'
 import { DevLogo } from './components/DevLogo'
 
@@ -16,23 +15,23 @@ function App() {
       <Header />
       <AppContainer className="App">
         <Avatar size={'large'} src={coolAvatar} />
-        <h1>
+        <Heading>
           Oi, eu sou <span>Jailson Anjos</span>
-        </h1>
+        </Heading>
         <h3>Eu construo interfaces para aplicativos da web</h3>
         <SocialMediaContainer>
-          <div>
+          <a href="https://www.linkedin.com/in/jailsonanjos/" target={'_blank'}>
             <LinkedinLogo size={32} color={'white'} />
-          </div>
-          <div>
+          </a>
+          <a href="https://github.com/jairocket" target={'_blank'}>
             <GithubLogo size={32} color={'white'} />
-          </div>
-          <div>
+          </a>
+          <a href="https://dev.to/jairocket" target={'_blank'}>
             <DevLogo />
-          </div>
-          <div>
+          </a>
+          <a href="mailto:jailsonanjos@hotmail.com?subject=Oportunidade">
             <Envelope size={32} color={'white'} />
-          </div>
+          </a>
         </SocialMediaContainer>
         <h2>Principais Stacks</h2>
         <ul>

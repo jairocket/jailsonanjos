@@ -6,5 +6,9 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 1.5rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
+  button {
+    cursor: pointer;
+    padding-top: 0.25rem;
+  }
 `

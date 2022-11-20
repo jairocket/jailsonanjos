@@ -1,9 +1,12 @@
 import sandwichButton from '../../assets/sandwich-button.svg'
 import { SandwichButtonContainer } from './styles'
 
-export function SandwichButton() {
+type SandwichButtonType = {
+  handleClick: () => void
+}
+export function SandwichButton({ handleClick }: SandwichButtonType) {
   return (
-    <SandwichButtonContainer type="button" onClick={() => console.log('click')}>
+    <SandwichButtonContainer type="button" onClick={handleClick}>
       <img src={sandwichButton} />
     </SandwichButtonContainer>
   )

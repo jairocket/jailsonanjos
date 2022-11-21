@@ -8,6 +8,7 @@ export const AvatarContainer = styled.div`
   justify-content: center;
   width: fit-content;
   margin-bottom: 2rem;
+  background-color: ${(props) => props.theme['gray-300']};
 `
 export const AvatarSmall = styled.img`
   height: 40px;

@@ -17,11 +17,14 @@ export const NavContainer = styled.nav`
   li {
     list-style: none;
     margin: 0.25rem;
+    height: 2.5rem;
   }
 
   a {
     color: ${(props) => props.theme['gray-900']};
-    font-family: 'Cinzel', serif;
     text-decoration: none;
+    &:hover {
+      color: ${(props) => props.theme['blue']};
+    }
   }
 `

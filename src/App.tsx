@@ -4,23 +4,23 @@ import { GlobalStyle } from './styles/globals'
 import { Avatar } from './components/Avatar'
 import { Header } from './components/Header'
 import coolAvatar from '../src/assets/cool-avatar.svg'
-import { AppContainer, Heading, SocialMediaContainer } from './styles/styles'
-import { GithubLogo, LinkedinLogo, Envelope, TwitterLogo } from 'phosphor-react'
-import { DevLogo } from './components/DevLogo'
+import { AppContainer, Heading, IdContainer } from './styles/styles'
+
 import { Skills } from './components/Skills'
 import { SkillsContainer } from './components/Skills/styles'
 import { Projects } from './components/Projects'
 import { ProjectsContainer } from './components/Projects/styles'
 import { ArticlesContainer } from './components/Article/styles'
 import { Article } from './components/Article'
+import { SocialMediaLinks } from './components/SocialMediaLinks'
 
 const mainStacks = {
   title: 'Principais Stacks',
   stacks: [
     'HTML5',
     'CSS3',
-    'JAVASCRIPT',
     'TYPESCRIPT',
+    'JAVASCRIPT',
     'REACTJS',
     'STYLED-COMPONENTS',
   ],
@@ -36,10 +36,12 @@ const projects = [
     title: 'Wined+',
     description:
       'Rede social para amantes de vinhos. Permite cadastrar novos membros, confrarias e eventos. Por meio das confrarias, é possível interagir por meio de postagens, curtidas e comentários.',
+    href: 'https://github.com/jairocket/projetoIntegrador-Wined/tree/react',
   },
   {
     title: 'Marvellous Wiki',
     description: 'Descubra personagens, revistas e séries do universo Marvel.',
+    href: 'https://github.com/jairocket/marvel-app',
   },
 ]
 
@@ -64,24 +66,14 @@ function App() {
       <Header />
       <AppContainer className="App">
         <Avatar size={'large'} src={coolAvatar} />
-        <Heading>
-          Oi, eu sou <span>Jailson Anjos</span>
-        </Heading>
-        <h3>Eu construo interfaces para aplicativos da web</h3>
-        <SocialMediaContainer>
-          <a href="https://www.linkedin.com/in/jailsonanjos/" target={'_blank'}>
-            <LinkedinLogo size={32} color={'white'} />
-          </a>
-          <a href="https://github.com/jairocket" target={'_blank'}>
-            <GithubLogo size={32} color={'white'} />
-          </a>
-          <a href="https://dev.to/jairocket" target={'_blank'}>
-            <DevLogo />
-          </a>
-          <a href="mailto:jailsonanjos@hotmail.com?subject=Oportunidade">
-            <Envelope size={32} color={'white'} />
-          </a>
-        </SocialMediaContainer>
+        <IdContainer>
+          <Heading>
+            Oi, eu sou <span>Jailson Anjos</span>
+          </Heading>
+          <h3>Eu construo interfaces para aplicativos da web</h3>
+          <SocialMediaLinks />
+        </IdContainer>
+
         <SkillsContainer>
           <Skills title={mainStacks.title} skillsList={mainStacks.stacks} />
           <Skills title={knownStacks.title} skillsList={knownStacks.stacks} />
@@ -90,9 +82,14 @@ function App() {
         <h2>Projetos</h2>
         <ProjectsContainer>
           {projects.map((project) => {
-            const { title, description } = project
+            const { title, description, href } = project
             return (
-              <Projects key={title} title={title} description={description} />
+              <Projects
+                key={title}
+                title={title}
+                description={description}
+                href={href}
+              />
             )
           })}
         </ProjectsContainer>

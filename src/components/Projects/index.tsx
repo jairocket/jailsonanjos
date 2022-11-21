@@ -1,12 +1,15 @@
 type ProjectType = {
   title: string
   description: string
+  href: string
 }
 
-export function Projects({ title, description }: ProjectType) {
+export function Projects({ title, description, href }: ProjectType) {
   return (
     <div key={title}>
-      <h4>{title}</h4>
+      <h4>
+        <a href={href}>{title}</a>
+      </h4>
       <p>{description}</p>
     </div>
   )

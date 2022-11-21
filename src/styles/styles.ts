@@ -10,13 +10,6 @@ export const AppContainer = styled.div`
   background-color: ${(props) => props.theme['gray-900']};
 `
 
-export const SocialMediaContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1.2rem;
-  margin: 1.75rem;
-`
 export const Heading = styled.h1`
   padding: 0 1rem;
 
@@ -24,4 +17,9 @@ export const Heading = styled.h1`
     font-size: 2.5rem;
     color: ${(props) => props.theme['blue']};
   }
+`
+export const IdContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `

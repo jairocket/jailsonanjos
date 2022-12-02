@@ -55,7 +55,7 @@ const articles = [
     href: 'https://community.revelo.com/funcoes-como-objetos-em-javascript/',
     title: 'Funções como Objetos em JavaScript:',
     description:
-      'Você verá conceitos básicos referentes à estrutura de objetos e sobre a natureza das funções em JavaScript.',
+      'Você verá conceitos básicos referentes à estrutura de objetos e sobre a natureza das funções em JavaScript. Conheça métodos importantes como o call, apply e bind.',
   },
 ]
 

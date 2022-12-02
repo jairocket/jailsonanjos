@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const ArticlesContainer = styled.div`
-  margin-left: 1.5rem;
+  margin: 1rem;
   line-height: 1.6;
   text-align: justify;
-  width: 100%;
+  align-items: stretch;
+  justify-content: flex-start;
 
   a {
     color: ${(props) => props.theme['gray-100']};
@@ -15,7 +16,6 @@ export const ArticlesContainer = styled.div`
     }
   }
   span {
-    margin: 1rem 0;
     font-family: 'Roboto', sans-serif;
   }
 `

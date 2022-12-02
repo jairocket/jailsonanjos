@@ -1,14 +1,19 @@
-import { NavContainer } from './styles'
+import { HideableNavBar, LinkContainer, ListItem, NavContainer } from './styles'
 
-export function NavBar() {
+type NavBarType = {
+  hideable?: boolean
+}
+
+export function NavBar({ hideable }: NavBarType) {
+  const NavBarContainer = hideable ? HideableNavBar : NavContainer
   return (
-    <NavContainer>
-      <li>
-        <a href="">Projetos</a>
-      </li>
-      <li>
-        <a href="">Artigos</a>
-      </li>
-    </NavContainer>
+    <NavBarContainer>
+      <ListItem>
+        <LinkContainer href="#projects">Projetos</LinkContainer>
+      </ListItem>
+      <ListItem>
+        <LinkContainer href="#articles">Artigos</LinkContainer>
+      </ListItem>
+    </NavBarContainer>
   )
 }

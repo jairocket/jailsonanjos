@@ -4,6 +4,7 @@ import { SandwichButton } from '../SandwichButton'
 import { HeaderContainer } from './styles'
 import { useState } from 'react'
 import { NavBar } from '../NavBar'
+import { HideableNavBar } from '../NavBar/styles'
 
 export function Header() {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -13,6 +14,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <Avatar src={coolAvatar} size={'small'} />
+      <NavBar hideable />
       <SandwichButton handleClick={handleClick} />
       {showNavbar && <NavBar />}
     </HeaderContainer>

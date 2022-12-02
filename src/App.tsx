@@ -79,7 +79,7 @@ function App() {
           <Skills title={knownStacks.title} skillsList={knownStacks.stacks} />
         </SkillsContainer>
 
-        <h2>Projetos</h2>
+        <h2 id="projects">Projetos</h2>
         <ProjectsContainer>
           {projects.map((project) => {
             const { title, description, href } = project
@@ -94,7 +94,7 @@ function App() {
           })}
         </ProjectsContainer>
 
-        <h2>Artigos</h2>
+        <h2 id="articles">Artigos</h2>
         <ArticlesContainer>
           {articles.map((article) => {
             const { href, title, description } = article

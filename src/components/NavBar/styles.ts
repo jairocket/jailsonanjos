@@ -10,21 +10,45 @@ export const NavContainer = styled.nav`
   padding: 0.5rem;
   border-radius: 8px;
   position: absolute;
-  overflow: auto;
+  overflow: hidden;
   right: 1rem;
   top: 5rem;
 
-  li {
-    list-style: none;
-    margin: 0.25rem;
-    height: 2.5rem;
+  @media screen and (min-width: 768px) {
+    background-color: transparent;
+    flex-direction: row;
+    position: static;
+    width: 12rem;
+  }
+`
+
+export const HideableNavBar = styled.nav`
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: 12rem;
+  }
+`
+export const ListItem = styled.li`
+  list-style: none;
+  margin: 0.25rem;
+  height: 2.5rem;
+
+  @media screen and (min-width: 768px) {
+    margin: 1rem;
+  }
+`
+export const LinkContainer = styled.a`
+  color: ${(props) => props.theme['gray-900']};
+  text-decoration: none;
+  &:hover {
+    color: ${(props) => props.theme['blue']};
   }
 
-  a {
-    color: ${(props) => props.theme['gray-900']};
-    text-decoration: none;
-    &:hover {
-      color: ${(props) => props.theme['blue']};
-    }
+  @media screen and (min-width: 768px) {
+    color: ${(props) => props.theme['gray-300']};
   }
 `

@@ -4,7 +4,7 @@ import { GlobalStyle } from './styles/globals'
 import { Avatar } from './components/Avatar'
 import { Header } from './components/Header'
 import coolAvatar from '../src/assets/cool-avatar.svg'
-import { AppContainer, Heading, IdContainer } from './styles/styles'
+import { AppContainer, Heading, Heading2, IdContainer } from './styles/styles'
 
 import { Skills } from './components/Skills'
 import { SkillsContainer } from './components/Skills/styles'
@@ -17,12 +17,12 @@ import { SocialMediaLinks } from './components/SocialMediaLinks'
 const mainStacks = {
   title: 'Principais Stacks',
   stacks: [
+    'REACTJS',
+    'TYPESCRIPT',
+    'STYLED-COMPONENTS',
+    'JAVASCRIPT',
     'HTML5',
     'CSS3',
-    'TYPESCRIPT',
-    'JAVASCRIPT',
-    'REACTJS',
-    'STYLED-COMPONENTS',
   ],
 }
 
@@ -79,7 +79,7 @@ function App() {
           <Skills title={knownStacks.title} skillsList={knownStacks.stacks} />
         </SkillsContainer>
 
-        <h2 id="projects">Projetos</h2>
+        <Heading2 id="projects">Projetos</Heading2>
         <ProjectsContainer>
           {projects.map((project) => {
             const { title, description, href } = project
@@ -94,7 +94,7 @@ function App() {
           })}
         </ProjectsContainer>
 
-        <h2 id="articles">Artigos</h2>
+        <Heading2 id="articles">Artigos</Heading2>
         <ArticlesContainer>
           {articles.map((article) => {
             const { href, title, description } = article

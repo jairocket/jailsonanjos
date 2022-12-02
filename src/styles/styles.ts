@@ -8,6 +8,7 @@ export const AppContainer = styled.div`
   padding: 0 1rem;
   text-align: center;
   background-color: ${(props) => props.theme['gray-900']};
+  padding-bottom: 4rem;
 `
 
 export const Heading = styled.h1`
@@ -18,6 +19,8 @@ export const Heading = styled.h1`
     color: ${(props) => props.theme['blue']};
   }
 `
+export const Heading2 = styled.h2``
+
 export const IdContainer = styled.div`
   display: flex;
   flex-direction: column;

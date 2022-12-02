@@ -1,3 +1,5 @@
+import { ProjectsContainer } from './styles'
+
 type ProjectType = {
   title: string
   description: string
@@ -6,11 +8,11 @@ type ProjectType = {
 
 export function Projects({ title, description, href }: ProjectType) {
   return (
-    <div key={title}>
+    <ProjectsContainer key={title}>
       <h4>
         <a href={href}>{title}</a>
       </h4>
       <p>{description}</p>
-    </div>
+    </ProjectsContainer>
   )
 }

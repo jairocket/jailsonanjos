@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 
 export const ArticlesContainer = styled.div`
-  margin: 2rem;
+  margin-left: 1.5rem;
   line-height: 1.6;
   text-align: justify;
-  margin-bottom: 4rem;
-  width: 91.75vw;
+  width: 100%;
 
   a {
     color: ${(props) => props.theme['gray-100']};
-    padding: 1rem;
+    padding-right: 1rem;
     text-decoration: none;
     &:hover {
       color: ${(props) => props.theme['blue']};

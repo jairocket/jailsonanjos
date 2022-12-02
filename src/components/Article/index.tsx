@@ -1,3 +1,5 @@
+import { ArticlesContainer } from './styles'
+
 type ArticleType = {
   href: string
   title: string
@@ -6,9 +8,9 @@ type ArticleType = {
 
 export function Article({ href, title, description }: ArticleType) {
   return (
-    <div key={title}>
+    <ArticlesContainer key={title}>
       <a href={href}>{title}</a>
       <span>{description}</span>
-    </div>
+    </ArticlesContainer>
   )
 }

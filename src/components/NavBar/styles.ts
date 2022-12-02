@@ -13,13 +13,6 @@ export const NavContainer = styled.nav`
   overflow: hidden;
   right: 1rem;
   top: 5rem;
-
-  @media screen and (min-width: 768px) {
-    background-color: transparent;
-    flex-direction: row;
-    position: static;
-    width: 12rem;
-  }
 `
 
 export const HideableNavBar = styled.nav`

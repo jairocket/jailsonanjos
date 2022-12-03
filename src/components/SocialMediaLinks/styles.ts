@@ -20,6 +20,6 @@ export const DesktopSocialMediaContainer = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 1.2rem;
-    margin: 1.75rem;
+    margin-bottom: 3rem;
   }
 `

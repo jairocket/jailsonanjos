@@ -37,6 +37,12 @@ export const articles = [
     description: 'Dê os primeiros passos com Jest e React Testing Library.',
   },
   {
+    href: 'https://dev.to/jairocket/autenticacoes-usando-jwt-3627',
+    title: 'Autenticações com JavaScript Web Tokens:',
+    description:
+      'Veja um exemplo de implementação de autenticação de usuários, utilizando JWT, desde a assinatura do token até a validação.',
+  },
+  {
     href: 'https://community.revelo.com/funcoes-como-objetos-em-javascript/',
     title: 'Funções como Objetos em JavaScript:',
     description:

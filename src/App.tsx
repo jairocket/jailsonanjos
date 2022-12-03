@@ -21,7 +21,7 @@ import { Article } from './components/Article'
 import { SocialMediaLinks } from './components/SocialMediaLinks'
 import { Skills } from './components/Skills'
 
-import { mainStacks, knownStacks, projects, articles } from './styles/data'
+import { mainStacks, knownStacks, projects, articles } from './data'
 
 function App() {
   return (

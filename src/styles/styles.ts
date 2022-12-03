@@ -14,6 +14,7 @@ export const AppContainer = styled.div`
     margin: 0 5rem;
     align-items: flex-start;
     max-width: 1832px;
+    margin-bottom: 10rem;
   }
 `
 

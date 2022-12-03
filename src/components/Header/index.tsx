@@ -1,5 +1,5 @@
 import { Avatar } from '../Avatar'
-import coolAvatar from '../../../public/happy-avatar.svg'
+import happyAvatar from '../../assets/happy-avatar.svg'
 import { SandwichButton } from '../SandwichButton'
 import { HeaderContainer } from './styles'
 import { useState } from 'react'
@@ -11,7 +11,7 @@ export function Header() {
 
   return (
     <HeaderContainer>
-      <Avatar src={coolAvatar} size={'small'} />
+      <Avatar src={happyAvatar} size={'small'} />
       <NavBar isMobile />
       <SandwichButton handleClick={handleClick} />
       {showNavbar && <NavBar handleClick={handleClick} />}

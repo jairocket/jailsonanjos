@@ -4,7 +4,13 @@ import { GlobalStyle } from './styles/globals'
 import { Avatar } from './components/Avatar'
 import { Header } from './components/Header'
 import coolAvatar from '../src/assets/cool-avatar.svg'
-import { AppContainer, Heading, Heading2, IdContainer } from './styles/styles'
+import {
+  AppContainer,
+  Heading,
+  Heading2,
+  HeadingAndData,
+  IdContainer,
+} from './styles/styles'
 
 import { Skills } from './components/Skills'
 import { SkillsContainer } from './components/Skills/styles'
@@ -17,10 +23,10 @@ import { SocialMediaLinks } from './components/SocialMediaLinks'
 const mainStacks = {
   title: 'Principais Stacks',
   stacks: [
-    'REACTJS',
-    'TYPESCRIPT',
-    'STYLED-COMPONENTS',
-    'JAVASCRIPT',
+    'Reactjs',
+    'TypeScript',
+    'Styled-Components',
+    'JavaScript',
     'HTML5',
     'CSS3',
   ],
@@ -28,7 +34,7 @@ const mainStacks = {
 
 const knownStacks = {
   title: 'Conhecimentos em',
-  stacks: ['NODEJS', 'EXPRESS', 'SEQUELIZE', 'MYSQL'],
+  stacks: ['Nodejs', 'Express', 'MySQL', 'Sequelize'],
 }
 
 const projects = [
@@ -65,22 +71,29 @@ function App() {
       <GlobalStyle />
       <Header />
       <AppContainer className="App">
-        <Avatar size={'large'} src={coolAvatar} />
         <IdContainer>
-          <Heading>
-            Oi, eu sou <span>Jailson Anjos</span>
-          </Heading>
-          <h3>Eu construo interfaces para aplicativos da web</h3>
-          <SocialMediaLinks />
+          <Avatar size={'large'} src={coolAvatar} />
+          <HeadingAndData>
+            <Heading>
+              Oi, eu sou <span>Jailson Anjos</span>
+            </Heading>
+            <h3>Eu construo interfaces para aplicativos da web</h3>
+            <SocialMediaLinks />
+            {/* find a better way to show skills */}
+            <SkillsContainer>
+              <Skills title={mainStacks.title} skillsList={mainStacks.stacks} />
+              <Skills
+                title={knownStacks.title}
+                skillsList={knownStacks.stacks}
+              />
+            </SkillsContainer>
+          </HeadingAndData>
         </IdContainer>
 
-        <SkillsContainer>
-          <Skills title={mainStacks.title} skillsList={mainStacks.stacks} />
-          <Skills title={knownStacks.title} skillsList={knownStacks.stacks} />
-        </SkillsContainer>
+        {/* move down projects and articles */}
 
-        <Heading2 id="projects">Projetos</Heading2>
         <ProjectsContainer>
+          <Heading2 id="projects">Projetos</Heading2>
           {projects.map((project) => {
             const { title, description, href } = project
             return (
@@ -94,8 +107,8 @@ function App() {
           })}
         </ProjectsContainer>
 
-        <Heading2 id="articles">Artigos</Heading2>
         <ArticlesContainer>
+          <Heading2 id="articles">Artigos</Heading2>
           {articles.map((article) => {
             const { href, title, description } = article
             return (

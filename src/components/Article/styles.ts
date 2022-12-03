@@ -7,6 +7,10 @@ export const ArticlesContainer = styled.div`
   align-items: stretch;
   justify-content: flex-start;
 
+  @media screen and (min-width: 768px) {
+    margin: 1rem 4rem;
+  }
+
   a {
     color: ${(props) => props.theme['gray-100']};
     padding-right: 1rem;

@@ -1,17 +1,20 @@
-import { HideableNavBar, LinkContainer, ListItem, NavContainer } from './styles'
+import { MobileNavBar, LinkContainer, ListItem, NavContainer } from './styles'
 
 type NavBarType = {
-  hideable?: boolean
+  isMobile?: boolean
+  handleClick?: () => void
 }
 
-export function NavBar({ hideable }: NavBarType) {
-  const NavBarContainer = hideable ? HideableNavBar : NavContainer
+export function NavBar({ isMobile, handleClick }: NavBarType) {
+  const NavBarContainer = isMobile ? MobileNavBar : NavContainer
   return (
     <NavBarContainer>
       <ListItem>
-        <LinkContainer href="#projects">Projetos</LinkContainer>
+        <LinkContainer href="#projects" onClick={handleClick}>
+          Projetos
+        </LinkContainer>
       </ListItem>
-      <ListItem>
+      <ListItem onClick={handleClick}>
         <LinkContainer href="#articles">Artigos</LinkContainer>
       </ListItem>
     </NavBarContainer>

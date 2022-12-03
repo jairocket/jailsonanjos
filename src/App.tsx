@@ -21,50 +21,7 @@ import { Article } from './components/Article'
 import { SocialMediaLinks } from './components/SocialMediaLinks'
 import { Skills } from './components/Skills'
 
-const mainStacks = {
-  title: 'Principais Stacks',
-  stacks: [
-    'Reactjs',
-    'TypeScript',
-    'Styled-Components',
-    'JavaScript',
-    'HTML5',
-    'CSS3',
-  ],
-}
-
-const knownStacks = {
-  title: 'Conhecimentos em',
-  stacks: ['Nodejs', 'Express', 'MySQL', 'Sequelize'],
-}
-
-const projects = [
-  {
-    title: 'Wined+',
-    description:
-      'Rede social para amantes de vinhos. Permite cadastrar novos membros, confrarias e eventos. Por meio das confrarias, é possível interagir por meio de postagens, curtidas e comentários.',
-    href: 'https://github.com/jairocket/projetoIntegrador-Wined/tree/react',
-  },
-  {
-    title: 'Marvellous Wiki',
-    description: 'Descubra personagens, revistas e séries do universo Marvel.',
-    href: 'https://github.com/jairocket/marvel-app',
-  },
-]
-
-const articles = [
-  {
-    href: 'https://dev.to/jairocket/comecando-com-jest-e-react-testing-library-10ck',
-    title: 'Começando com Jest e React Testing Library:',
-    description: 'Dê os primeiros passos com Jest e React Testing Library.',
-  },
-  {
-    href: 'https://community.revelo.com/funcoes-como-objetos-em-javascript/',
-    title: 'Funções como Objetos em JavaScript:',
-    description:
-      'Você verá conceitos básicos referentes à estrutura de objetos e sobre a natureza das funções em JavaScript. Conheça métodos importantes como o call, apply e bind.',
-  },
-]
+import { mainStacks, knownStacks, projects, articles } from './styles/data'
 
 function App() {
   return (
@@ -79,18 +36,14 @@ function App() {
               Oi, eu sou <span>Jailson Anjos</span>
             </Heading>
             <h3>Eu construo interfaces para aplicativos da web</h3>
+            <Skills />
             <SocialMediaLinks />
-            {/* find a better way to show skills */}
           </HeadingAndData>
         </IdContainer>
         <SkillContainer>
           <Skill title={mainStacks.title} skillsList={mainStacks.stacks} />
           <Skill title={knownStacks.title} skillsList={knownStacks.stacks} />
         </SkillContainer>
-        <Skills />
-
-        {/* move down projects and articles */}
-
         <ProjectsContainer>
           <Heading2 id="projects">Projetos</Heading2>
           {projects.map((project) => {

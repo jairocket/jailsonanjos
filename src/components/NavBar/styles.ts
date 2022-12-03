@@ -15,7 +15,7 @@ export const NavContainer = styled.nav`
   top: 5rem;
 `
 
-export const HideableNavBar = styled.nav`
+export const MobileNavBar = styled.nav`
   display: none;
 
   @media screen and (min-width: 768px) {

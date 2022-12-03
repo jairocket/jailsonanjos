@@ -4,14 +4,14 @@ export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding: 0 1rem;
   text-align: center;
   background-color: ${(props) => props.theme['gray-900']};
   margin-bottom: 10rem;
 
   @media screen and (min-width: 768px) {
-    margin: 0 7rem;
+    margin: 0 5rem;
     align-items: flex-start;
     max-width: 1832px;
   }
@@ -43,6 +43,7 @@ export const IdContainer = styled.div`
     justify-content: space-between;
     width: 100%;
     align-items: flex-start;
+    margin-bottom: 2rem;
     padding: 2.5rem;
   }
 `

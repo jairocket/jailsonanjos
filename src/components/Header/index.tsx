@@ -7,15 +7,14 @@ import { NavBar } from '../NavBar'
 
 export function Header() {
   const [showNavbar, setShowNavbar] = useState(false)
-
   const handleClick = () => setShowNavbar(!showNavbar)
 
   return (
     <HeaderContainer>
       <Avatar src={coolAvatar} size={'small'} />
-      <NavBar hideable />
+      <NavBar isMobile />
       <SandwichButton handleClick={handleClick} />
-      {showNavbar && <NavBar />}
+      {showNavbar && <NavBar handleClick={handleClick} />}
     </HeaderContainer>
   )
 }

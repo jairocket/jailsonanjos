@@ -1,17 +1,25 @@
-import { AvatarContainer, AvatarSmall, AvatarLarge } from './styles'
+import { SocialMediaLinks } from '../SocialMediaLinks'
+import {
+  AvatarContainer,
+  AvatarSmall,
+  AvatarLarge,
+  AvatarViewContaiber,
+} from './styles'
 
 type AvatarPropsType = {
   src: string
   size: 'small' | 'large'
-  hideable?: boolean
 }
 
-export function Avatar({ src, size, hideable }: AvatarPropsType) {
+export function Avatar({ src, size }: AvatarPropsType) {
   const AvatarPicture = size === 'small' ? AvatarSmall : AvatarLarge
 
   return (
-    <AvatarContainer>
-      <AvatarPicture src={src} />
-    </AvatarContainer>
+    <AvatarViewContaiber>
+      <AvatarContainer>
+        <AvatarPicture src={src} />
+      </AvatarContainer>
+      {size !== 'small' && <SocialMediaLinks isLargeScreen />}
+    </AvatarViewContaiber>
   )
 }

@@ -12,13 +12,14 @@ import {
   IdContainer,
 } from './styles/styles'
 
-import { Skills } from './components/Skills'
-import { SkillsContainer } from './components/Skills/styles'
+import { Skill } from './components/Skill'
+import { SkillContainer } from './components/Skill/styles'
 import { Projects } from './components/Projects'
 import { ProjectsContainer } from './components/Projects/styles'
 import { ArticlesContainer } from './components/Article/styles'
 import { Article } from './components/Article'
 import { SocialMediaLinks } from './components/SocialMediaLinks'
+import { Skills } from './components/Skills'
 
 const mainStacks = {
   title: 'Principais Stacks',
@@ -80,15 +81,13 @@ function App() {
             <h3>Eu construo interfaces para aplicativos da web</h3>
             <SocialMediaLinks />
             {/* find a better way to show skills */}
-            <SkillsContainer>
-              <Skills title={mainStacks.title} skillsList={mainStacks.stacks} />
-              <Skills
-                title={knownStacks.title}
-                skillsList={knownStacks.stacks}
-              />
-            </SkillsContainer>
           </HeadingAndData>
         </IdContainer>
+        <SkillContainer>
+          <Skill title={mainStacks.title} skillsList={mainStacks.stacks} />
+          <Skill title={knownStacks.title} skillsList={knownStacks.stacks} />
+        </SkillContainer>
+        <Skills />
 
         {/* move down projects and articles */}
 

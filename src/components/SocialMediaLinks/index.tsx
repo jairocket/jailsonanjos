@@ -1,8 +1,19 @@
-import { SocialMediaContainer } from './styles'
+import {
+  MobileSocialMediaContainer,
+  DesktopSocialMediaContainer,
+} from './styles'
 import { GithubLogo, LinkedinLogo, Envelope } from 'phosphor-react'
 import { DevLogo } from '../../components/DevLogo'
 
-export function SocialMediaLinks() {
+type SocialMediaLinksType = {
+  isLargeScreen?: boolean
+}
+
+export function SocialMediaLinks({ isLargeScreen }: SocialMediaLinksType) {
+  const SocialMediaContainer = isLargeScreen
+    ? DesktopSocialMediaContainer
+    : MobileSocialMediaContainer
+
   return (
     <SocialMediaContainer>
       <a href="https://www.linkedin.com/in/jailsonanjos/" target={'_blank'}>

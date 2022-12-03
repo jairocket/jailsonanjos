@@ -1,17 +1,14 @@
-type SkillsType = {
-  title: string
-  skillsList: string[]
-}
+import { SkillsContainer } from './styles'
 
-export function Skills({ title, skillsList }: SkillsType) {
+export function Skills() {
   return (
-    <div>
-      <h2>{title}</h2>
-      <ul>
-        {skillsList.map((skill) => {
-          return <li key={skill}>{skill}</li>
-        })}
-      </ul>
-    </div>
+    <SkillsContainer>
+      <h2>Principais Tecnologias</h2>
+      <p>
+        Trabalho com Reactjs, TypeScript, Styled-Components, JavaScript, HTML5 e
+        CSS3. Além destas stacks, por meio de projetos pessoais, possuo
+        conhecimentos em Nodejs, Express, MySQL e Sequelize.
+      </p>
+    </SkillsContainer>
   )
 }

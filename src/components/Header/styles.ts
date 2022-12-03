@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
   align-items: flex-start;
   margin-top: 1.5rem;
   padding: 0 1rem;
+  margin-bottom: 4rem;
   button {
     cursor: pointer;
     padding-top: 0.25rem;

@@ -11,6 +11,12 @@ export const AvatarContainer = styled.div`
   background-color: ${(props) => props.theme['gray-300']};
 `
 
+export const AvatarViewContaiber = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 export const AvatarContainerSmall = styled.div`
   border-radius: 50%;
   border: solid 2px #00818a;

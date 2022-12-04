@@ -221,6 +221,7 @@ Error generating stack: `+i.message+`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 
   @media screen and (min-width: 768px) {
     flex-direction: row-reverse;
@@ -271,7 +272,7 @@ Error generating stack: `+i.message+`
       color: ${e=>e.theme.blue};
     }
   }
-`;function u1({title:e,description:t,href:n}){return Q(uf,{children:[v("h4",{children:v("a",{href:n,children:e})}),v("p",{children:t})]},e)}const sf=ie.div`
+`;function u1({title:e,description:t,href:n}){return Q(uf,{children:[v("h4",{children:v("a",{href:n,target:"_blank",children:e})}),v("p",{children:t})]},e)}const sf=ie.div`
   margin: 1rem;
   line-height: 1.6;
   text-align: justify;
@@ -295,7 +296,7 @@ Error generating stack: `+i.message+`
   span {
     font-family: 'Roboto', sans-serif;
   }
-`;function s1({href:e,title:t,description:n}){return Q(sf,{children:[v("a",{href:e,children:t}),v("span",{children:n})]},t)}const a1=ie.div`
+`;function s1({href:e,title:t,description:n}){return Q(sf,{children:[v("a",{href:e,target:"_blank",children:t}),v("span",{children:n})]},t)}const a1=ie.div`
   display: none;
 
   @media screen and (min-width: 768px) {

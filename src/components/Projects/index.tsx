@@ -10,7 +10,9 @@ export function Projects({ title, description, href }: ProjectType) {
   return (
     <ProjectsContainer key={title}>
       <h4>
-        <a href={href}>{title}</a>
+        <a href={href} target={'_blank'}>
+          {title}
+        </a>
       </h4>
       <p>{description}</p>
     </ProjectsContainer>

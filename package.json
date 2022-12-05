@@ -1,7 +1,6 @@
 {
   "homepage": "https://jairocket.github.io/jailsonanjos",
   "name": "jailsonanjos",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

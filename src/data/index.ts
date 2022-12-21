@@ -48,4 +48,10 @@ export const articles = [
     description:
       'Você verá conceitos básicos referentes à estrutura de objetos e sobre a natureza das funções em JavaScript. Conheça métodos importantes como o call, apply e bind.',
   },
+  {
+    href: 'https://es.community.revelo.com/funciones-como-objetos-de-javascript/',
+    title: 'Funciones como Objetos en JavaScript:',
+    description:
+      'Aprenda los métodos de call, apply y bind de las funciones en JavaScript.',
+  },
 ]

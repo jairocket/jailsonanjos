@@ -22,6 +22,7 @@ import { SocialMediaLinks } from './components/SocialMediaLinks'
 import { Skills } from './components/Skills'
 
 import { mainStacks, knownStacks, projects, articles } from './data'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
             )
           })}
         </ArticlesContainer>
+        <Footer />
       </AppContainer>
     </ThemeProvider>
   )

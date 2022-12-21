@@ -8,13 +8,13 @@ export const AppContainer = styled.div`
   padding: 0 1rem;
   text-align: center;
   background-color: ${(props) => props.theme['gray-900']};
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 
   @media screen and (min-width: 768px) {
     margin: 0 5rem;
     align-items: flex-start;
     max-width: 1832px;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
   }
 `
 

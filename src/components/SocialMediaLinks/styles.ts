@@ -5,7 +5,7 @@ export const MobileSocialMediaContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 1.2rem;
-  margin: 1.75rem;
+  margin: 0 2.25rem 1.75rem;
 
   @media screen and (min-width: 768px) {
     display: none;

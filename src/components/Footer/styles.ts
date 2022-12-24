@@ -6,10 +6,6 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-self: center;
 `
-export const CustomButtom = styled.button`
-  overflow: hidden;
-  background-color: transparent;
-  border: transparent;
-  font-family: 'Cinzel', serif;
-  color: white;
+export const SpanContainer = styled.span`
+  font-size: 0.75rem;
 `

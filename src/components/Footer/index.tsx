@@ -1,14 +1,13 @@
 import arrowUp from '../../assets/arrow-up.svg'
-import { Triangle } from 'phosphor-react'
-import { CustomButtom, FooterContainer } from './styles'
+import { Button } from '../Button'
+import { SpanContainer, FooterContainer } from './styles'
 
 export function Footer() {
+  const handleclick = () => window.scrollTo(0, 0)
+  const info = 'Voltar ao topo'
   return (
     <FooterContainer>
-      <CustomButtom onClick={() => window.scrollTo(0, 0)}>
-        <Triangle size={32} color={'white'} />
-        <p>Voltar para o topo</p>
-      </CustomButtom>
+      <Button src={arrowUp} handleClick={handleclick} info={info} />
     </FooterContainer>
   )
 }

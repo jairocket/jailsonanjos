@@ -8,3 +8,8 @@ export const ButtonContainer = styled.button`
     display: none;
   }
 `
+export const ButtonInformation = styled.p`
+  font-family: 'Cinzel', serif;
+  color: ${(props) => props.theme[`gray-100`]};
+  font-size: 0.75rem;
+`

@@ -28,10 +28,10 @@ export const AvatarContainerSmall = styled.div`
   background-color: ${(props) => props.theme['gray-300']};
 `
 export const AvatarSmall = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 `
 export const AvatarLarge = styled.img`
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
 `

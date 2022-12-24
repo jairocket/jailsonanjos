@@ -11,8 +11,7 @@ export const NavContainer = styled.nav`
   border-radius: 8px;
   position: absolute;
   overflow: hidden;
-  right: 1rem;
-  top: 5rem;
+  right: 4rem;
 `
 
 export const MobileNavBar = styled.nav`

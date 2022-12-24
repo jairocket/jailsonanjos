@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SkillsContainer = styled.div`
-  display: none;
+  margin: 1rem;
 
   @media screen and (min-width: 768px) {
     display: block;

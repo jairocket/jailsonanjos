@@ -12,8 +12,6 @@ import {
   IdContainer,
 } from './styles/styles'
 
-import { Skill } from './components/Skill'
-import { SkillContainer } from './components/Skill/styles'
 import { Projects } from './components/Projects'
 import { ProjectsContainer } from './components/Projects/styles'
 import { ArticlesContainer } from './components/Article/styles'
@@ -41,10 +39,7 @@ function App() {
             <SocialMediaLinks />
           </HeadingAndData>
         </IdContainer>
-        <SkillContainer>
-          <Skill title={mainStacks.title} skillsList={mainStacks.stacks} />
-          <Skill title={knownStacks.title} skillsList={knownStacks.stacks} />
-        </SkillContainer>
+
         <ProjectsContainer>
           <Heading2 id="projects">Projetos</Heading2>
           {projects.map((project) => {

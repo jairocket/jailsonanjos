@@ -4,7 +4,7 @@ export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding: 0 1rem;
   text-align: center;
   background-color: ${(props) => props.theme['gray-900']};
@@ -20,12 +20,12 @@ export const AppContainer = styled.div`
 
 export const Heading = styled.h1`
   @media screen and (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-top: 4rem;
   }
 
   span {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: ${(props) => props.theme['blue']};
     @media screen and (min-width: 768px) {
       font-size: 3.5rem;

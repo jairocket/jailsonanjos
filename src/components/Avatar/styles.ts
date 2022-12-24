@@ -32,6 +32,6 @@ export const AvatarSmall = styled.img`
   width: 40px;
 `
 export const AvatarLarge = styled.img`
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
 `

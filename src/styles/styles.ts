@@ -4,8 +4,8 @@ export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
-  padding: 0 1rem;
+  margin-top: 4rem;
+  padding: 0 1.25rem;
   text-align: center;
   background-color: ${(props) => props.theme['gray-900']};
   margin-bottom: 1.5rem;

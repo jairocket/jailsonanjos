@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SandwichButtonContainer = styled.button`
+export const ButtonContainer = styled.button`
   background-color: transparent;
   border: transparent;
 

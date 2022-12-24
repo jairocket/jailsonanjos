@@ -1,9 +1,10 @@
 import { Avatar } from '../Avatar'
 import happyAvatar from '../../assets/happy-avatar.svg'
-import { SandwichButton } from '../SandwichButton'
+import { Button } from '../Button'
 import { HeaderContainer } from './styles'
 import { useState } from 'react'
 import { NavBar } from '../NavBar'
+import sandwichButton from '../../assets/sandwich-button.svg'
 
 export function Header() {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -13,7 +14,7 @@ export function Header() {
     <HeaderContainer>
       <Avatar src={happyAvatar} size={'small'} />
       <NavBar isMobile />
-      <SandwichButton handleClick={handleClick} />
+      <Button src={sandwichButton} handleClick={handleClick} />
       {showNavbar && <NavBar handleClick={handleClick} />}
     </HeaderContainer>
   )

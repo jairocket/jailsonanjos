@@ -67,4 +67,14 @@ export const articles = [
       'Short-Circuit Evaluations y Logical Assigning Operators: ¿Cómo se usan?',
     description: 'Short-Circuit Evaluations y Logical Assigning Operators',
   },
+  {
+    href: 'https://community.revelo.com.br/clean-code-em-direcao-a-um-trabalho-legivel/',
+    title: 'Clean Code: Em direção a um trabalho legível',
+    description: 'Exemplos de refatoração de código',
+  },
+  {
+    href: 'https://community.listopro.com/clean-code-hacia-un-trabajo-legible/',
+    title: 'Clean Code: hacia un trabajo legible',
+    description: 'Ejemplos de refactorización de código',
+  }
 ]

@@ -3,11 +3,11 @@ import { Button } from '../Button'
 import { SpanContainer, FooterContainer } from './styles'
 
 export function Footer() {
-  const handleclick = () => window.scrollTo(0, 0)
+  const handleClick = () => window.scrollTo(0, 0)
   const info = 'Voltar ao topo'
   return (
     <FooterContainer>
-      <Button src={arrowUp} handleClick={handleclick} info={info} />
+      <Button src={arrowUp} handleClick={handleClick} info={info} />
     </FooterContainer>
   )
 }

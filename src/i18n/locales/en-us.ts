@@ -9,7 +9,10 @@ export default {
             name: "JAILSON ANJOS",
             occupation: "I am a software engineer"
         },
-        skills: "I have a 18 months experience as a front end engineer, working with ",
+        skills: {
+            frontend:"I have experience as a frontend developer, working with ",
+            backend: "As a backend developer, I've been hacking on "
+        }, 
         studying: "I am also familiar with "
 
     }

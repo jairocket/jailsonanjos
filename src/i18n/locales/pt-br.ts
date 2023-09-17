@@ -11,9 +11,10 @@ export default {
         },
         skills: {
             frontend:"Como desenvolvedor frontend, tenho experiência com ",
-            backend: "No backend, tenho trabalhado com "
+            backend: "No backend, tenho trabalhado com ",
+            studying: "Também possuo conhecimentos em "
         },
-        studying: "Também possuo conhecimentos em "
+        
 
     }
 }

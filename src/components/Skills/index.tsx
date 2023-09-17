@@ -10,7 +10,7 @@ export function Skills() {
         {t('skills.frontend')}<span>Reactjs</span>, <span>TypeScript</span>,{' '}
         <span>Styled-Components</span>, <span> Jest</span>, <span>React Testing Library</span>,<span> JavaScript </span>,{' '}
         <span>HTML5</span>, <span>CSS3</span> & <span>Git</span>. <br/>
-        {t('studying')} <span>Nodejs</span>, <span>Express</span>,{' '}
+        {t('skills.studying')} <span>Nodejs</span>, <span>Express</span>,{' '}
         <span>MySQL</span> e <span>Sequelize</span>.
       </p>
     </SkillsContainer>

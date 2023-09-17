@@ -1,3 +1,5 @@
+import '.i18n'
+
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/Themes/default'
 import { GlobalStyle } from './styles/globals'

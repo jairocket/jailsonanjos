@@ -49,7 +49,7 @@ export const articles = [
       'Você verá conceitos básicos referentes à estrutura de objetos e sobre a natureza das funções em JavaScript. Conheça métodos importantes como o call, apply e bind.',
   },
   {
-    href: 'https://es.community.revelo.com/funciones-como-objetos-de-javascript/',
+    href: 'https://community.listopro.com/funciones-como-objetos-de-javascript/',
     title: 'Funciones como Objetos en JavaScript:',
     description:
       'Aprenda los métodos de call, apply y bind de las funciones en JavaScript.',
@@ -62,7 +62,7 @@ export const articles = [
       'Um tutorial de como usar Short-Circuit Evaluations e Logical Assigning Operators.',
   },
   {
-    href: 'https://es.community.revelo.com/short-circuit-evaluations-y-logical-assigning-operators-como-se-usan/',
+    href: 'https://community.listopro.com/short-circuit-evaluations-y-logical-assigning-operators-como-se-usan/',
     title:
       'Short-Circuit Evaluations y Logical Assigning Operators: ¿Cómo se usan?',
     description: 'Short-Circuit Evaluations y Logical Assigning Operators',

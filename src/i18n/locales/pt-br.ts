@@ -1,7 +1,7 @@
 export default {
     translations: {
         section: {
-            project: "PROJETOS",
+            projects: "PROJETOS",
             articles: "ARTIGOS"
         },
         heading: {
@@ -9,8 +9,8 @@ export default {
             name: "JAILSON ANJOS",
             occupation: "Sou um software engineer"
         },
-        skills: "Trabalho com",
-        studying: "Também possuo conhecimentos em"
+        skills: "Trabalho com ",
+        studying: "Também possuo conhecimentos em "
 
     }
 }

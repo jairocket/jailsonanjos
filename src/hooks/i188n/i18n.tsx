@@ -10,27 +10,26 @@ import {Flag} from '../../components/Flag'
 
 const I18n = () => {
   const { i18n } = useTranslation()
-  // Instância do i18n
 
   function handleChangeLanguage(language: string) {
-    // Trocando o idioma na chamada da função
+  
     i18n.changeLanguage(language)
   }
 
-  const selectedLanguage = i18n.language // Idioma selecionado
+  const selectedLanguage = i18n.language 
   return (
     <div className="flags-container">
-      // Bandeira do Brasil
+
       <Flag
         image={BrFlag}
-        isSelected={selectedLanguage === 'pt-BR'} // Verifica o idioma escolhido
-        onClick={() => handleChangeLanguage('pt-BR')} // Troca o idioma para pt-BR
+        isSelected={selectedLanguage === 'pt-BR'} 
+        onClick={() => handleChangeLanguage('pt-BR')} 
       />
-      // Bandeira dos EUA
+
       <Flag
         image={UkFlag}
-        isSelected={selectedLanguage === 'en-US'} // Verifica o idioma escolhido
-        onClick={() => handleChangeLanguage('en-US')} // Troca o idioma para en-US
+        isSelected={selectedLanguage === 'en-US'} 
+        onClick={() => handleChangeLanguage('en-US')} 
       />
     </div>
   )

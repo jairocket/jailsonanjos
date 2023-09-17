@@ -1,6 +1,6 @@
 import arrowUp from '../../assets/arrow-up.svg'
 import { Button } from '../Button'
-import { SpanContainer, FooterContainer } from './styles'
+import { FooterContainer } from './styles'
 
 export function Footer() {
   const handleClick = () => window.scrollTo(0, 0)

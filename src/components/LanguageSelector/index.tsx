@@ -1,24 +1,23 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
-// useTranslation é um hook 
-// que devolve uma função de tradução (t) e a instância do i18n
 
-// Importa as bandeiras (imagens e componente)
+import { useTranslation } from 'react-i18next'
 import BrFlag from '../../assets/BrFlag.svg'
 import UkFlag from '../../assets/UkFlag.svg'
-import {Flag} from '../../components/Flag'
+import {Flag} from '../Flag'
+import { FlagsContainer } from './styles'
 
-const I18n = () => {
+export const LanguageSelector = () => {
   const { i18n } = useTranslation()
 
-  function handleChangeLanguage(language: string) {
-  
+  const handleChangeLanguage = (language: string) => {
+    console.log(language)
     i18n.changeLanguage(language)
   }
-
+    
+  
   const selectedLanguage = i18n.language 
+  
   return (
-    <div className="flags-container">
+    <FlagsContainer>
 
       <Flag
         image={BrFlag}
@@ -31,8 +30,7 @@ const I18n = () => {
         isSelected={selectedLanguage === 'en-US'} 
         onClick={() => handleChangeLanguage('en-US')} 
       />
-    </div>
+    </FlagsContainer>
   )
 }
 
-export default I18n

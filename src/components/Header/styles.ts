@@ -18,3 +18,8 @@ export const HeaderContainer = styled.header`
     margin-bottom: 3rem;
   }
 `
+
+export const AvatarContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`

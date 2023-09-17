@@ -6,5 +6,5 @@ type FlagType = {
 }
 
 export const Flag = ({image, isSelected}: FlagType) => (
-    <img alt="flag" src={image } className={isSelected ? 'flag selected' : 'flag'}/>
+    <img alt="flag" src={ image } className={isSelected ? 'flag selected' : 'flag'}/>
 )

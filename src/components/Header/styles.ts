@@ -14,7 +14,12 @@ export const HeaderContainer = styled.header`
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0 4rem;
+    padding: 0 8rem;
     margin-bottom: 3rem;
   }
+`
+
+export const AvatarContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `

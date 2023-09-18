@@ -1,3 +1,7 @@
+import './i18n'
+
+import { useTranslation } from 'react-i18next'
+
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/Themes/default'
 import { GlobalStyle } from './styles/globals'
@@ -21,28 +25,33 @@ import { Skills } from './components/Skills'
 
 import { mainStacks, knownStacks, projects, articles } from './data'
 import { Footer } from './components/Footer'
+import { LanguageSelector } from './components/LanguageSelector'
 
 function App() {
+  const {t} = useTranslation()
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <Header />
+     
       <AppContainer className="App">
+
         <IdContainer>
           <Avatar size={'large'} src={coolAvatar} />
           <HeadingAndData>
             <Heading>
-              Oi, eu sou <span>Jailson Anjos</span>
+              {t("heading.title")} <span>{t('heading.name')}</span>
             </Heading>
-            <h3>Eu construo interfaces para aplicativos da web</h3>
+            <h3>{t("heading.occupation")}</h3>
             <Skills />
             <SocialMediaLinks />
           </HeadingAndData>
         </IdContainer>
 
         <ProjectsContainer>
-          <Heading2 id="projects">Projetos</Heading2>
-          {projects.map((project) => {
+          <Heading2 id="projects">{t("section.projects")}</Heading2>
+          {projects.map((project) => { 
             const { title, description, href } = project
             return (
               <Projects
@@ -56,7 +65,7 @@ function App() {
         </ProjectsContainer>
 
         <ArticlesContainer>
-          <Heading2 id="articles">Artigos</Heading2>
+          <Heading2 id="articles">{t("section.articles")}</Heading2>
           {articles.map((article) => {
             const { href, title, description } = article
             return (

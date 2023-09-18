@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const AvatarContainer = styled.div`
   border-radius: 50%;
-  border: solid 2px #00818a;
+  border: solid 2px ${(props) => props.theme['blue']};;
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -11,7 +11,7 @@ export const AvatarContainer = styled.div`
   background-color: ${(props) => props.theme['gray-300']};
 `
 
-export const AvatarViewContaiber = styled.div`
+export const AvatarViewContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@ export const AvatarViewContaiber = styled.div`
 
 export const AvatarContainerSmall = styled.div`
   border-radius: 50%;
-  border: solid 2px #00818a;
+  border: solid 2px ${(props) => props.theme['blue']};;
   display: flex;
   overflow: hidden;
   justify-content: center;

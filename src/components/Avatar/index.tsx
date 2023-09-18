@@ -1,9 +1,10 @@
+import { LanguageSelector } from '../LanguageSelector'
 import { SocialMediaLinks } from '../SocialMediaLinks'
 import {
   AvatarContainer,
   AvatarSmall,
   AvatarLarge,
-  AvatarViewContaiber,
+  AvatarViewContainer,
 } from './styles'
 
 type AvatarPropsType = {
@@ -15,11 +16,11 @@ export function Avatar({ src, size }: AvatarPropsType) {
   const AvatarPicture = size === 'small' ? AvatarSmall : AvatarLarge
 
   return (
-    <AvatarViewContaiber>
+    <AvatarViewContainer>
       <AvatarContainer>
         <AvatarPicture src={src} />
       </AvatarContainer>
       {size !== 'small' && <SocialMediaLinks isLargeScreen />}
-    </AvatarViewContaiber>
+    </AvatarViewContainer>
   )
 }

@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 
 export const FlagsContainer = styled.div`
-    justify-items: center;
     display: flex;
-    width: 2rem;
-    gap: 4px;
+    justify-content: right;
+    gap: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    padding: 2px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 8rem;
+    }
 `

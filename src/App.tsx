@@ -25,6 +25,7 @@ import { Skills } from './components/Skills'
 
 import { mainStacks, knownStacks, projects, articles } from './data'
 import { Footer } from './components/Footer'
+import { LanguageSelector } from './components/LanguageSelector'
 
 function App() {
   const {t} = useTranslation()
@@ -33,7 +34,9 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <Header />
+     
       <AppContainer className="App">
+
         <IdContainer>
           <Avatar size={'large'} src={coolAvatar} />
           <HeadingAndData>

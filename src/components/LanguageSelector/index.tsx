@@ -9,22 +9,18 @@ export const LanguageSelector = () => {
   const { i18n } = useTranslation()
 
   const handleChangeLanguage = (language: string) => {
-    console.log(language)
     i18n.changeLanguage(language)
   }
-    
-  
+      
   const selectedLanguage = i18n.language 
   
   return (
     <FlagsContainer>
-
       <Flag
         image={BrFlag}
         isSelected={selectedLanguage === 'pt-BR'} 
         onClick={() => handleChangeLanguage('pt-BR')} 
       />
-
       <Flag
         image={UkFlag}
         isSelected={selectedLanguage === 'en-US'} 

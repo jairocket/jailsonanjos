@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { MobileNavBar, LinkContainer, ListItem, NavContainer } from './styles'
+import { LanguageSelector } from '../LanguageSelector'
 
 type NavBarType = {
   isMobile?: boolean

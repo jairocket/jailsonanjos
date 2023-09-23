@@ -34,9 +34,7 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <Header />
-     
       <AppContainer className="App">
-
         <IdContainer>
           <Avatar size={'large'} src={coolAvatar} />
           <HeadingAndData>
@@ -48,7 +46,6 @@ function App() {
             <SocialMediaLinks />
           </HeadingAndData>
         </IdContainer>
-
         <ProjectsContainer>
           <Heading2 id="projects">{t("section.projects")}</Heading2>
           {projects.map((project) => { 
@@ -63,7 +60,6 @@ function App() {
             )
           })}
         </ProjectsContainer>
-
         <ArticlesContainer>
           <Heading2 id="articles">{t("section.articles")}</Heading2>
           {articles.map((article) => {

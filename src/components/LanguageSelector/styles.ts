@@ -4,6 +4,7 @@ export const FlagsContainer = styled.div`
     display: flex;
     justify-content: right;
     gap: 16px;
+    margin-top: 16px;
     margin-bottom: 16px;
     margin-right: 16px;
     padding: 2px;

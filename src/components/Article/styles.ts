@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const ArticlesContainer = styled.div`
   margin: 1rem;
   line-height: 1.6;
-  text-align: justify;
-  align-items: stretch;
+  text-align: start;
+
   justify-content: flex-start;
 
   h2 {
@@ -29,5 +29,5 @@ export const ArticlesContainer = styled.div`
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    margin: 0 2.5rem;
+    margin: 0 0.5rem;
 `

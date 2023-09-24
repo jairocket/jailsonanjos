@@ -7,11 +7,10 @@ import EsFlag from '../../assets/EsFlag.svg'
 type ArticleType = {
   href: string
   title: string
-  description: string
   language: string
 }
 
-export function Article({ href, title, description, language }: ArticleType) {
+export function Article({ href, title, language }: ArticleType) {
   return (
     <Wrapper>
       {language === "br" ? (
@@ -28,7 +27,6 @@ export function Article({ href, title, description, language }: ArticleType) {
         <a href={href} target={'_blank'}>
           {title}
         </a>
-        <span>{description}</span>
       </ArticlesContainer>
     </Wrapper>
   )

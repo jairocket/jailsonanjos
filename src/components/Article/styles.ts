@@ -25,3 +25,9 @@ export const ArticlesContainer = styled.div`
     font-family: 'Roboto', sans-serif;
   }
 `
+
+export const Wrapper = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 0 2.5rem;
+`

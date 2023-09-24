@@ -3,7 +3,7 @@ import { FlagContainer, FlagImage } from "./styles";
 type FlagType = {
     image: string;
     isSelected: boolean;
-    onClick: () => void
+    onClick?: () => void
 }
 
 export const Flag = ({ image, isSelected, onClick }: FlagType) => (

@@ -23,9 +23,9 @@ import { Article } from './components/Article'
 import { SocialMediaLinks } from './components/SocialMediaLinks'
 import { Skills } from './components/Skills'
 
-import { mainStacks, knownStacks, projects, articles } from './data'
+import { projects, articles } from './data'
 import { Footer } from './components/Footer'
-import { LanguageSelector } from './components/LanguageSelector'
+
 
 function App() {
   const {t} = useTranslation()

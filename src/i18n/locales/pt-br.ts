@@ -10,11 +10,13 @@ export default {
             occupation: "Sou um software engineer"
         },
         skills: {
-            frontend:"Como desenvolvedor frontend, tenho experiência com ",
-            backend: "No backend, tenho trabalhado com ",
+            frontend:"Tenho experiência com ",
+            backend: "Atualmente, tenho trabalhado com ",
             studying: "Também possuo conhecimentos em "
         },
-        
+        scroll: {
+            top: "Voltar ao topo"
+        }
 
     }
 }

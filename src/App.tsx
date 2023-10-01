@@ -63,13 +63,12 @@ function App() {
         <ArticlesContainer>
           <Heading2 id="articles">{t("section.articles")}</Heading2>
           {articles.map((article) => {
-            const { href, title, language } = article
+            const { href, title } = article
             return (
               <Article
                 key={title}
                 href={href}
                 title={title}
-                language={language}
               />
             )
           })}

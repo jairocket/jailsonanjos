@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ArticlesContainer = styled.div`
-  margin: 1rem;
+  margin: 1rem 0 1rem 1rem;
   line-height: 1.6;
   text-align: start;
 
@@ -29,5 +29,5 @@ export const ArticlesContainer = styled.div`
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    margin: 0 0.5rem;
+    margin: 0 0.75rem;
 `

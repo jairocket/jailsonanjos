@@ -7,27 +7,14 @@ import EsFlag from '../../assets/EsFlag.svg'
 type ArticleType = {
   href: string
   title: string
-  language: string
 }
 
-export function Article({ href, title, language }: ArticleType) {
+export function Article({ href, title }: ArticleType) {
   return (
-    <Wrapper>
-      {language === "br" ? (
-        <div>
-          <Flag image={BrFlag} isSelected={false} /> 
-        </div> 
-      ) : (
-        <div>
-          <Flag image={EsFlag} isSelected={false}/>
-        </div>
-        )
-      }
       <ArticlesContainer key={title}>
         <a href={href} target={'_blank'}>
           {title}
         </a>
       </ArticlesContainer>
-    </Wrapper>
   )
 }

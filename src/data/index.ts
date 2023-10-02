@@ -1,20 +1,3 @@
-export const mainStacks = {
-  title: 'Principais Stacks',
-  stacks: [
-    'Reactjs',
-    'TypeScript',
-    'Styled-Components',
-    'JavaScript',
-    'HTML5',
-    'CSS3',
-    'Git',
-  ],
-}
-
-export const knownStacks = {
-  title: 'Conhecimentos em',
-  stacks: ['Nodejs', 'Express', 'MySQL', 'Sequelize'],
-}
 
 export const projects = [
   {

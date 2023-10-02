@@ -1,20 +1,28 @@
+import { useTranslation } from 'react-i18next'
 import { ProjectsContainer } from './styles'
 
-type ProjectType = {
-  title: string
-  description: string
-  href: string
-}
 
-export function Projects({ title, description, href }: ProjectType) {
+export function Projects() {
+
+  const { t } = useTranslation()
   return (
-    <ProjectsContainer key={title}>
-      <h4>
-        <a href={href} target={'_blank'}>
-          {title}
-        </a>
-      </h4>
-      <p>{description}</p>
-    </ProjectsContainer>
+    <>
+      <ProjectsContainer>
+        <h4>
+          <a href={'https://github.com/jairocket/projetoIntegrador-Wined/tree/react'} target={'_blank'}>
+            Wined+
+          </a>
+        </h4>
+        <p>{t("projects.description.wined")}</p>
+      </ProjectsContainer>
+      <ProjectsContainer>
+        <h4>
+          <a href={'https://github.com/jairocket/marvel-app'} target={'_blank'}>
+            Marvellous Wiki
+          </a>
+        </h4>
+        <p>{t("projects.description.marvellous")}</p>
+      </ProjectsContainer>
+    </>
   )
 }

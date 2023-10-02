@@ -48,17 +48,7 @@ function App() {
         </IdContainer>
         <ProjectsContainer>
           <Heading2 id="projects">{t("section.projects")}</Heading2>
-          {projects.map((project) => { 
-            const { title, description, href } = project
-            return (
-              <Projects
-                key={title}
-                title={title}
-                description={description}
-                href={href}
-              />
-            )
-          })}
+          <Projects />
         </ProjectsContainer>
         <ArticlesContainer>
           <Heading2 id="articles">{t("section.articles")}</Heading2>

@@ -5,9 +5,9 @@ export default {
             articles: "ARTIGOS"
         },
         heading: {
-            title: "Oi, eu sou ",
+            title: "Oi! eu sou ",
             name: "JAILSON ANJOS",
-            occupation: "Sou um software engineer"
+            occupation: "Software engineer"
         },
         skills: {
             frontend:"Tenho experiência com ",

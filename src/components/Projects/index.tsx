@@ -23,6 +23,14 @@ export function Projects() {
         </h4>
         <p>{t("projects.description.marvellous")}</p>
       </ProjectsContainer>
+      <ProjectsContainer>
+        <h4>
+          <a href={'https://github.com/jairocket/budget'} target={'_blank'}>
+            Budget
+          </a>
+        </h4>
+        <p>{t("projects.description.budget")}</p>
+      </ProjectsContainer>
     </>
   )
 }

@@ -17,7 +17,8 @@ export default {
         projects: {
             description: {
                 wined: "Social media for wine lovers. You can create new members, events and brotherhoods; interact with posts, likes and comments.",
-                marvellous: "Browse stuff about marvel universe"
+                marvellous: "Browse stuff about marvel universe.",
+                budget: "A simple expenses control API."
             } 
         }, 
         scroll: {
